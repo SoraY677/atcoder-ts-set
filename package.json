@@ -5,12 +5,13 @@
     "setup": "run-s setup:*",
     "setup:install": "yarn",
     "setup:reset": "yarn node --loader ts-node/esm  --no-warnings=ExperimentalWarning ./cli.ts setup",
-    "run:a": "yarn node --loader ts-node/esm  --no-warnings=ExperimentalWarning ./problems/a.ts",
-    "run:b": "yarn node --loader ts-node/esm  --no-warnings=ExperimentalWarning ./problems/b.ts",
-    "run:c": "yarn node --loader ts-node/esm  --no-warnings=ExperimentalWarning ./problems/c.ts",
-    "run:d": "yarn node --loader ts-node/esm  --no-warnings=ExperimentalWarning ./problems/d.ts",
-    "run:e": "yarn node --loader ts-node/esm  --no-warnings=ExperimentalWarning ./problems/e.ts",
-    "run:f": "yarn node --loader ts-node/esm  --no-warnings=ExperimentalWarning ./problems/f.ts"
+    "test": "yarn node --loader ts-node/esm --no-warnings=ExperimentalWarning",
+    "test:a": "yarn node --loader ts-node/esm --no-warnings=ExperimentalWarning ./problems/a/index.ts < ./problems/a/input.txt",
+    "test:b": "yarn node --loader ts-node/esm --no-warnings=ExperimentalWarning ./problems/b/index.ts < ./problems/b/input.txt",
+    "test:c": "yarn node --loader ts-node/esm --no-warnings=ExperimentalWarning ./problems/c/index.ts < ./problems/c/input.txt",
+    "test:d": "yarn node --loader ts-node/esm --no-warnings=ExperimentalWarning ./problems/d/index.ts < ./problems/d/input.txt",
+    "test:e": "yarn node --loader ts-node/esm --no-warnings=ExperimentalWarning ./problems/e/index.ts < ./problems/e/input.txt",
+    "test:f": "yarn node --loader ts-node/esm --no-warnings=ExperimentalWarning ./problems/f/index.ts < ./problems/f/input.txt"
   },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",

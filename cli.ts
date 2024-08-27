@@ -30,6 +30,9 @@ function setup() {
     fs.copySync(PROBLEMS_DIR, PROBLEMS_DIR + "-" + formattedDate);
   }
   for (const problem of problems) {
-    fs.copyFileSync(TEMPLATE_FILE, path.join(PROBLEMS_DIR, `${problem}.ts`));
+    const dir = PROBLEMS_DIR + `/${problem}`;
+    fs.mkdirSync(dir, { recursive: true });
+    fs.copyFileSync(TEMPLATE_FILE, path.join(dir, `index.ts`));
+    fs.writeFile(path.join(dir, `input.txt`), "");
   }
 }
