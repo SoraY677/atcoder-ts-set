@@ -1,7 +1,6 @@
 # atcoder-ts-set
 
 Using TypeScript Package For Atcoder.
-t
 
 ## Env
 
