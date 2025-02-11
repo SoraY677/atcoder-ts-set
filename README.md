@@ -9,20 +9,27 @@ Using TypeScript Package For Atcoder.
 
 ## Commands
 
+### Setup Problem
+
 ```bash
 # setup (arg: problem id)
 yarn setup ${problem-id}
 
 ## example
-
 yarn setup a
 yarn setup b
 yarn setup c
 yarn setup d
 yarn setup e
 yarn setup f
+```
 
-# test
+### Test Problem
 
-yarn test
+```bash
+
+# test (arg: problem id)
+yarn test ${problem-id}
+
+yarn test a
 ```
