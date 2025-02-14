@@ -1,4 +1,4 @@
-# atcoder-ts-set
+# atcoder-ts
 
 Using TypeScript Package For Atcoder.
 
@@ -31,5 +31,6 @@ yarn setup f
 # test (arg: problem id)
 yarn test ${problem-id}
 
+## example
 yarn test a
 ```
