@@ -7,29 +7,29 @@ Using TypeScript Package For Atcoder.
 - [node v20.11.0 or more](https://nodejs.org/api/)
   - [yarn 1.22.21 or more](https://classic.yarnpkg.com/en/docs/install#windows-stable)
 
-## Cli
+## Commands
 
-### Setup
+### Setup Problem
 
-```sh
-# init (package install)
-yarn setup
+```bash
+# setup (arg: problem id)
+yarn setup ${problem-id}
 
-# problem reset
-yarn setup:reset
+## example
+yarn setup a
+yarn setup b
+yarn setup c
+yarn setup d
+yarn setup e
+yarn setup f
 ```
 
-### Run
+### Test Problem
 
-```sh
-# run with filepath as argument
-yarn run test ${filepath}
+```bash
 
-# run selected problem
-yarn test:a
-yarn test:b
-yarn test:c
-yarn test:d
-yarn test:e
-yarn test:f
+# test (arg: problem id)
+yarn test ${problem-id}
+
+yarn test a
 ```
